@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>WEB COMPONENTS REMOTE CONF</title>
     <link rel="stylesheet" href="dist/css/layout.css">
+    <script src="assets/js/CustomElements.js"></script>
+    <script src="assets/js/countdown-wc.js"></script>
 </head>
 <body>
     <div class="container">
@@ -22,22 +24,8 @@
                     <h1>WEB COMPONENTS REMOTE CONF</h1>
                     <h2>February 16-17th 2017</h2>
                     <div id="clock">
-                        <div class="segment">
-                            <div class="number">10</div>
-                            <div class="text">DAYS</div>
-                        </div>
-                        <div class="segment">
-                            <div class="number">15</div>
-                            <div class="text">HOURS</div>
-                        </div>
-                        <div class="segment">
-                            <div class="number">36</div>
-                            <div class="text">MINUTES</div>
-                        </div>
-                        <div class="segment">
-                            <div class="number">24</div>
-                            <div class="text">SECONDS</div>
-                        </div>
+                        <countdown-wc date="2017-02-16"></countdown-wc>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="social">
@@ -60,12 +48,12 @@
         <section id="speakers">
             <div id="cfp">
                 <h2>SUBMIT A PROPOSAL</h2>
-                <p>A really snappy call to action paragraph here.</p>
+                <p>We are current accepting proposals for talks on or closely related to web components for Thursday February 16th through to Friday February 17th 2017.</p>
                 <div class="controls">
                     <a href="#" class="button blue">SUBMIT PROPOSAL</a>
                 </div>
             </div>
-            <h1>SPEAKERS</h1>
+            <h2>SPEAKERS</h2>
             <div class="items">
                 <div class="item">
                     <h3>JAMES BLACK</h3>
@@ -95,48 +83,41 @@
             <div class="items">
                 <div class="item">
                     <h3>ERIK ISAKSEN</h3>
-                    <a href="#" class="social">@eisaksen</a>
+                    <a href="https://twitter.com/eisaksen" target="_blank" class="social">@eisaksen</a>
                     <div class="photo">
                         <img src="assets/img/panel/erik.jpg" width="200" height="200" />
-                        <p>Some text here.</p>
                     </div>
                 </div>
                 <div class="item">
                     <h3>JUSTIN RIBEIRO</h3>
-                    <a href="#" class="social">@justinribeiro</a>
+                    <a href="https://twitter.com/justinribeiro" target="_blank" class="social">@justinribeiro</a>
                     <div class="photo">
                         <img src="assets/img/panel/justin.jpg" width="200" height="200" />
-                        <p>Some text here.</p>
                     </div>
                 </div>
                 <div class="item">
                     <h3>LEON REVILL</h3>
-                    <a href="#" class="social">@revillweb</a>
+                    <a href="https://twitter.com/revillweb" class="social" target="_blank">@revillweb</a>
                     <div class="photo">
                         <img src="assets/img/panel/leon.jpg" width="200" height="200" />
-                        <p>Some text here.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="sponsors">
             <h2>SPONSORS</h2>
+            <p class="description">These great companies below are supporting us this year, thank you!</p>
             <div class="items">
-                <div class="item">
-                    <div class="photo">
-                        <a href="#" class="logo" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" width="100" height="100" /></a>
-                    </div>
+                <div class="item carfax">
+                    <a href="https://www.carfax.com/" class="logo" target="_blank"><img src="assets/img/sponsors/carfax-logo.png" /></a>
                 </div>
-                <div class="item">
-                    <div class="photo">
-                        <a href="#" class="logo" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" width="100" height="100" /></a>
-                    </div>
+                <div class="item stickman">
+                    <a href="https://www.stickmanventures.com/" class="logo" target="_blank"><img src="assets/img/sponsors/stickman.png" width="100" height="100" /></a>
                 </div>
-                <div class="item">
-                    <div class="photo">
-                        <a href="https://www.commontime.com/" class="logo" target="_blank"><img src="assets/img/sponsors/commontime.png" width="250" height="100" /></a>
-                    </div>
+                <div class="item commontime">
+                    <a href="https://www.commontime.com/" class="logo" target="_blank"><img src="assets/img/sponsors/commontime.png" width="180" height="54" /></a>
                 </div>
+                <div class="clearfix"></div>
             </div>
             <div class="controls">
                 <a href="#" class="button">BECOME A SPONSOR</a>
