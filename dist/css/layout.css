@@ -29,35 +29,45 @@ section {
   section p {
     color: #333; }
   section .items {
-    text-align: center; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
     section .items .item {
-      margin: 0 10px;
-      text-align: left;
-      display: inline-block; }
+      margin: 0 10px 10px 0; }
       section .items .item h3 {
         color: #e23f24; }
+
+ul.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul.nav-list li a {
+    line-height: 80px;
+    display: block;
+    color: #333;
+    transition: color 0.3s ease; }
+  ul.nav-list li a:hover {
+    color: #e23f24; }
 
 #main-nav {
   background-color: #FFF;
   height: 80px; }
   #main-nav img {
     margin-top: 2px; }
-  #main-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  #main-nav ul.nav-list {
     float: right; }
-    #main-nav ul li {
+    #main-nav ul.nav-list li {
       float: left; }
-      #main-nav ul li a {
-        line-height: 80px;
-        display: block;
-        text-align: center;
+      #main-nav ul.nav-list li a {
         min-width: 120px;
-        color: #333;
-        transition: color 0.3s ease; }
-      #main-nav ul li a:hover {
-        color: #e23f24; }
+        text-align: center; }
+  #main-nav .menu-btn {
+    float: right;
+    color: #333;
+    font-size: 32px;
+    margin: 15px 15px 0 0;
+    display: none; }
 
 #main-header {
   background-size: 100%;
@@ -90,11 +100,13 @@ section {
       line-height: 50px; }
       #main-header .inner .social a {
         color: #f16529; }
-  #main-header #stamp {
+  #main-header .stamp-container {
     position: absolute;
-    z-index: 99;
     top: 0;
-    left: calc(50% - 250px); }
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url("../../assets/img/logo-tran.png") no-repeat center center; }
 
 #updates {
   background-color: #e23f24;
@@ -102,7 +114,7 @@ section {
   #updates h2 {
     color: #FFF; }
   #updates .content {
-    width: 600px;
+    max-width: 600px;
     margin: auto; }
     #updates .content p {
       margin-bottom: 10px; }
@@ -125,7 +137,7 @@ section {
 
 #clock {
   text-align: center;
-  margin-top: 30px; }
+  margin: 30px auto 0 auto; }
   #clock countdown-wc {
     display: inline-block; }
 
@@ -173,3 +185,62 @@ section {
 
 #sponsors .controls {
   text-align: center; }
+
+.slide-menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1000;
+  transition: background-color 300ms ease-in; }
+
+.slide-menu {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  background: #FFF;
+  height: 100%;
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 300ms ease-in; }
+  .slide-menu h2 {
+    background-color: #e23f24;
+    line-height: 80px;
+    padding: 0 15px 0 20px; }
+    .slide-menu h2 a.menu-btn {
+      display: block;
+      color: #333;
+      float: right;
+      font-size: 32px;
+      width: 100px;
+      text-align: right;
+      cursor: pointer; }
+  .slide-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .slide-menu ul li {
+      padding: 0 20px;
+      line-height: 80px; }
+      .slide-menu ul li a {
+        display: block;
+        color: #333; }
+      .slide-menu ul li a:hover {
+        color: #e23f24; }
+
+.slide-menu-container.open {
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.25); }
+  .slide-menu-container.open .slide-menu {
+    transform: none; }
+
+@media (max-width: 580px) {
+  #main-nav ul {
+    display: none; }
+  #main-nav .menu-btn {
+    display: block; }
+  #clock {
+    width: 260px; } }

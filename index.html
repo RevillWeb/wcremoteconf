@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>WEB COMPONENTS REMOTE CONF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
     <link rel="stylesheet" href="dist/css/layout.css">
-    <script src="assets/js/CustomElements.js"></script>
+    <script src="assets/js/skatejs-web-components.js"></script>
     <script src="assets/js/countdown-wc.js"></script>
 </head>
 <body>
     <div class="container">
+        <div class="slide-menu-container">
+            <nav class="slide-menu">
+                <h2>Menu <a class="menu-btn"><span class="icon-cross"></span></a></h2>
+                <ul class="nav-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#speakers">SPEAKERS</a></li>
+                    <li><a href="#panel">PANEL</a></li>
+                    <li><a href="#sponsors">SPONSORS</a></li>
+                </ul>
+            </nav>
+        </div>
         <nav id="main-nav">
             <img src="assets/img/logo-scaled.png" width="100" height="72" />
-            <ul>
-                <li><a href="#home">HOME</a></li>
+            <ul class="nav-list">
+                <li><a href="#">HOME</a></li>
                 <li><a href="#speakers">SPEAKERS</a></li>
                 <li><a href="#panel">PANEL</a></li>
                 <li><a href="#sponsors">SPONSORS</a></li>
             </ul>
+            <a href="#" class="menu-btn"><span class="icon-hamburger"></span></a>
         </nav>
         <header id="main-header">
             <div class="inner">
@@ -33,7 +47,7 @@
                     <a href="#">#wcremoteconf</a>
                 </div>
             </div>
-            <img src="assets/img/logo-tran.png" id="stamp" />
+            <div class="stamp-container"></div>
         </header>
         <section id="updates">
             <h2>UPDATES</h2>
@@ -53,30 +67,30 @@
                     <a href="#" class="button blue">SUBMIT PROPOSAL</a>
                 </div>
             </div>
-            <h2>SPEAKERS</h2>
-            <div class="items">
-                <div class="item">
-                    <h3>JAMES BLACK</h3>
-                    <a href="#" class="social">@jblack</a>
-                    <div class="photo">
-                        <img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />
-                    </div>
-                </div>
-                <div class="item">
-                    <h3>JANE WHITE</h3>
-                    <a href="#" class="social">@jwhite</a>
-                    <div class="photo">
-                        <img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />
-                    </div>
-                </div>
-                <div class="item">
-                    <h3>CHRIS GREEN</h3>
-                    <a href="#" class="social">@cgreen</a>
-                    <div class="photo">
-                        <img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />
-                    </div>
-                </div>
-            </div>
+            <!--<h2>SPEAKERS</h2>-->
+            <!--<div class="items">-->
+                <!--<div class="item">-->
+                    <!--<h3>JAMES BLACK</h3>-->
+                    <!--<a href="#" class="social">@jblack</a>-->
+                    <!--<div class="photo">-->
+                        <!--<img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<h3>JANE WHITE</h3>-->
+                    <!--<a href="#" class="social">@jwhite</a>-->
+                    <!--<div class="photo">-->
+                        <!--<img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="item">-->
+                    <!--<h3>CHRIS GREEN</h3>-->
+                    <!--<a href="#" class="social">@cgreen</a>-->
+                    <!--<div class="photo">-->
+                        <!--<img src="http://www.clker.com/cliparts/m/3/I/C/c/2/grey-silhouette-of-man-hi.png" width="200" height="200" />-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </section>
         <section id="panel">
             <h2>PANEL</h2>
@@ -124,5 +138,6 @@
             </div>
         </section>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
