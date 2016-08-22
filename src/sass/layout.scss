@@ -291,6 +291,37 @@ ul.nav-list {
   }
 }
 
+rebel-slide-menu {
+  --font-family: 'Oswald';
+  --header-bg-color: #e23f24;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        color: #333;
+        text-decoration: none;
+        display: block;
+        line-height: 80px;
+        padding: 0 20px;
+        border-bottom: solid 1px rgba(204, 204, 204, 0.25);
+        transition: color 300ms ease;
+      }
+      a:visited {
+        color: inherit;
+      }
+      a:hover {
+        color: #e23f24;
+      }
+    }
+  }
+}
+/** FOR EDGE/IE which doesn't support CSS variables **/
+rebel-slide-menu .title {
+  background-color: #e23f24 !important;
+}
+
 @media (max-width: 580px) {
   #main-nav {
     ul {

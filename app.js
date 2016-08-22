@@ -1,17 +1,10 @@
-var $slideMenu = document.querySelector(".slide-menu-container");
-var $menuBtns = document.querySelectorAll(".menu-btn");
-var _toggleMenu = function() {
-    $slideMenu.classList.toggle("open");
-};
-//ForEach like this so its works in IE
-[].forEach.call($menuBtns, function($element){
-    $element.addEventListener("click", _toggleMenu);
+var $menu = document.querySelector("#menu");
+$menu.addEventListener("click", function(){
+    setTimeout(function(){
+        $menu.close();
+    }, 300);
 });
-var $navLinks = document.querySelectorAll(".slide-menu .nav-list li a");
-[].forEach.call($navLinks, function($element){
-    $element.addEventListener("click", function(){
-        setTimeout(function(){
-            _toggleMenu();
-        }, 300);
-    });
+var $menuBtn = document.querySelector(".menu-btn");
+$menuBtn.addEventListener("click", function(){
+    $menu.open();
 });

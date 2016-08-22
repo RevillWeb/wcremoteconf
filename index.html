@@ -8,20 +8,19 @@
     <link rel="stylesheet" href="dist/css/layout.css">
     <script src="assets/js/skatejs-web-components.js"></script>
     <script src="assets/js/countdown-wc.js"></script>
+    <script src="assets/js/rebel-slide-menu.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="slide-menu-container">
-            <nav class="slide-menu">
-                <h2>Menu <a class="menu-btn"><span class="icon-cross"></span></a></h2>
-                <ul class="nav-list">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#speakers">SPEAKERS</a></li>
-                    <li><a href="#panel">PANEL</a></li>
-                    <li><a href="#sponsors">SPONSORS</a></li>
-                </ul>
-            </nav>
-        </div>
+        <rebel-slide-menu id="menu">
+            <span slot="title">Navigation</span>
+            <ul slot="content" class="default">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#speakers">SPEAKERS</a></li>
+                <li><a href="#panel">PANEL</a></li>
+                <li><a href="#sponsors">SPONSORS</a></li>
+            </ul>
+        </rebel-slide-menu>
         <nav id="main-nav">
             <img src="assets/img/logo-scaled.png" width="100" height="72" />
             <ul class="nav-list">
