@@ -118,7 +118,7 @@ ul.nav-list {
     margin: auto; }
     #updates .content p {
       margin-bottom: 10px; }
-    #updates .content .controls input[type="text"] {
+    #updates .content .controls input[type="email"] {
       width: calc(100% - 120px);
       box-sizing: border-box;
       height: 40px;
@@ -126,7 +126,7 @@ ul.nav-list {
       border: none;
       padding: 5px;
       margin-bottom: 5px; }
-    #updates .content .controls button {
+    #updates .content .controls input[type="submit"] {
       width: 100px;
       height: 40px;
       border-radius: 5px;
