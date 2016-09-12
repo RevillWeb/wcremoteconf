@@ -34,13 +34,18 @@ section {
     justify-content: center;
     flex-wrap: wrap; }
     section .items .item {
-      max-width: 200px;
       margin: 0 10px 10px 0; }
       section .items .item h3 {
         color: #e23f24; }
       section .items .item .social {
         display: block;
         margin-bottom: 10px; }
+      section .items .item .bio {
+        width: 200px; }
+  section .items.rows {
+    flex-direction: column; }
+    section .items.rows .item {
+      max-width: 100%; }
 
 ul.nav-list {
   margin: 0;
