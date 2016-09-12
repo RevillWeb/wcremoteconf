@@ -42,10 +42,6 @@ section {
         margin-bottom: 10px; }
       section .items .item .bio {
         width: 200px; }
-  section .items.rows {
-    flex-direction: column; }
-    section .items.rows .item {
-      max-width: 100%; }
 
 ul.nav-list {
   margin: 0;
