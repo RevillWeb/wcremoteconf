@@ -3,11 +3,11 @@
   margin: 0;
   font-family: 'Oswald', sans-serif; }
 
-a {
+.container a {
   text-decoration: none;
   color: #0098e9; }
 
-a.button {
+.container a.button {
   background-color: #e23f24;
   display: inline-block;
   color: #FFF;
@@ -16,7 +16,7 @@ a.button {
   border-radius: 5px;
   margin-top: 10px; }
 
-a.button.blue {
+.container a.button.blue {
   background-color: #0098e9; }
 
 .clearfix {
@@ -141,23 +141,23 @@ ul.nav-list {
   #clock countdown-wc {
     display: inline-block; }
 
-#speakers #cfp {
+.call-to-action {
   border-top: dotted 1px #0098e9;
   border-bottom: dotted 1px #0098e9;
   color: #0098e9;
   margin: 20px auto 20px auto;
   padding: 0 30px 30px 30px; }
-  #speakers #cfp h2 {
+  .call-to-action h2 {
     text-align: center;
     width: 200px;
     margin: -20px auto 20px auto;
     padding: 0 20px;
     background-color: #FFF; }
-  #speakers #cfp p {
+  .call-to-action p {
     margin-bottom: 20px;
     text-align: center;
     color: #444444; }
-  #speakers #cfp .controls {
+  .call-to-action .controls {
     text-align: center; }
 
 #panel {
@@ -262,6 +262,8 @@ rebel-slide-menu .title {
   background-color: #e23f24 !important; }
 
 @media (max-width: 580px) {
+  section {
+    padding: 10px; }
   #main-nav ul {
     display: none; }
   #main-nav .menu-btn {

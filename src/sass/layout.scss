@@ -8,22 +8,25 @@ $blue: #0098e9;
   margin: 0;
   font-family: 'Oswald', sans-serif;
 }
-a {
-  text-decoration: none;
-  color: $blue;
+.container {
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+  a.button {
+    background-color: $primary-color;
+    display: inline-block;
+    color: #FFF;
+    padding: 0 20px;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  a.button.blue {
+    background-color: $blue;
+  }
 }
-a.button {
-  background-color: $primary-color;
-  display: inline-block;
-  color: #FFF;
-  padding: 0 20px;
-  line-height: 50px;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-a.button.blue {
-  background-color: $blue;
-}
+
 .clearfix {
   clear: both;
 }
@@ -170,29 +173,29 @@ ul.nav-list {
     display: inline-block;
   }
 }
-#speakers {
-  #cfp {
-    border-top: dotted 1px $blue;
-    border-bottom: dotted 1px $blue;
-    color: $blue;
-    margin: 20px auto 20px auto;
-    padding: 0 30px 30px 30px;
-    h2 {
-      text-align: center;
-      width: 200px;
-      margin: -20px auto 20px auto;
-      padding: 0 20px;
-      background-color: #FFF;
-    }
-    p {
-      margin-bottom: 20px;
-      text-align: center;
-      color: #444444;
-    }
-    .controls {
-      text-align: center;
-    }
+.call-to-action {
+  border-top: dotted 1px $blue;
+  border-bottom: dotted 1px $blue;
+  color: $blue;
+  margin: 20px auto 20px auto;
+  padding: 0 30px 30px 30px;
+  h2 {
+    text-align: center;
+    width: 200px;
+    margin: -20px auto 20px auto;
+    padding: 0 20px;
+    background-color: #FFF;
   }
+  p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444444;
+  }
+  .controls {
+    text-align: center;
+  }
+}
+#speakers {
   .photo {
 
   }
@@ -323,6 +326,9 @@ rebel-slide-menu .title {
 }
 
 @media (max-width: 580px) {
+  section {
+    padding: 10px;
+  }
   #main-nav {
     ul {
       display: none;
