@@ -44,9 +44,14 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     .item {
+      max-width: 200px;
       margin: 0 10px 10px 0;
       h3 {
         color: $primary-color;
+      }
+      .social {
+        display: block;
+        margin-bottom: 10px;
       }
     }
   }
@@ -196,18 +201,14 @@ ul.nav-list {
   }
 }
 #speakers {
-  .photo {
-
+  .item {
+    padding: 20px;
   }
 }
 #panel {
   background-color: #E1E1E1;
   h1 {
     margin-bottom: 20px;
-  }
-  .social {
-    display: block;
-    margin-bottom: 10px;
   }
   .item {
     .photo {

@@ -34,9 +34,13 @@ section {
     justify-content: center;
     flex-wrap: wrap; }
     section .items .item {
+      max-width: 200px;
       margin: 0 10px 10px 0; }
       section .items .item h3 {
         color: #e23f24; }
+      section .items .item .social {
+        display: block;
+        margin-bottom: 10px; }
 
 ul.nav-list {
   margin: 0;
@@ -160,13 +164,13 @@ ul.nav-list {
   .call-to-action .controls {
     text-align: center; }
 
+#speakers .item {
+  padding: 20px; }
+
 #panel {
   background-color: #E1E1E1; }
   #panel h1 {
     margin-bottom: 20px; }
-  #panel .social {
-    display: block;
-    margin-bottom: 10px; }
   #panel .item .photo {
     background-color: #FFF;
     padding: 5px; }
