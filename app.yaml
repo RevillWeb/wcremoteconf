@@ -30,6 +30,9 @@ handlers:
   static_dir: dist
   secure: always
 
+- url: /.well-known/(.*)
+  script: le.app
+
 - url: .*
   script: main.app
   secure: always
