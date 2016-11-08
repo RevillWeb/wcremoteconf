@@ -1,6 +1,6 @@
 {
   "name": "wcremoteconf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Website for web components remote conf",
   "main": "html.html",
   "scripts": {
