@@ -31,17 +31,25 @@ section {
   section .items {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap; }
     section .items .item {
-      margin: 0 10px 10px 0; }
+      flex: 1;
+      padding: 10px; }
       section .items .item h3 {
         color: #e23f24; }
       section .items .item .social {
         display: block;
         margin-bottom: 10px; }
       section .items .item .bio {
-        width: 200px; }
+        background-color: #F1F1F1;
+        padding: 10px;
+        margin-top: 5px; }
+      section .items .item .photo {
+        border-top: solid 2px #E1E1E1;
+        text-align: center;
+        padding-top: 10px; }
+      section .items .item .photo img {
+        border-radius: 50%; }
 
 ul.nav-list {
   margin: 0;
@@ -165,16 +173,66 @@ ul.nav-list {
   .call-to-action .controls {
     text-align: center; }
 
-#speakers .item {
-  padding: 20px; }
+#schedule h2 {
+  font-size: 40px;
+  color: #e23f24;
+  text-align: center;
+  margin-bottom: 20px; }
+
+#schedule .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #F1F1F1;
+  padding: 10px; }
+  #schedule .container .day {
+    flex: 1;
+    min-width: 280px; }
+    #schedule .container .day .time {
+      margin-bottom: 10px; }
+    #schedule .container .day h3 {
+      margin-bottom: 0; }
+    #schedule .container .day .items {
+      border-top: solid 2px #E1E1E1;
+      padding-top: 10px; }
+      #schedule .container .day .items .item {
+        padding: 10px;
+        min-width: 250px; }
+        #schedule .container .day .items .item .title {
+          display: flex; }
+          #schedule .container .day .items .item .title .text {
+            flex-basis: 75%;
+            margin-bottom: 10px; }
+          #schedule .container .day .items .item .title .photo {
+            flex-basis: 25%;
+            padding: 0;
+            border: none; }
+            #schedule .container .day .items .item .title .photo img {
+              border-radius: 50%;
+              max-width: 80px;
+              margin-top: -10px;
+              display: inline-block; }
+    #schedule .container .day .talk-title {
+      font-size: 20px;
+      color: #0098e9;
+      border-bottom: solid 1px #e23f24;
+      padding-bottom: 5px; }
+  #schedule .container .day:first-child {
+    padding-right: 10px; }
+
+#schedule .bar {
+  clear: both;
+  height: 2px;
+  background-color: #e23f24; }
 
 #panel {
   background-color: #E1E1E1; }
   #panel h1 {
     margin-bottom: 20px; }
   #panel .item .photo {
-    background-color: #FFF;
-    padding: 5px; }
+    border-top: solid 2px #FFF; }
+  #panel .item .bio {
+    background-color: #FFF; }
 
 #sponsors .description {
   margin-bottom: 20px;
@@ -184,7 +242,8 @@ ul.nav-list {
   margin-bottom: 20px; }
   #sponsors .items .item {
     height: 100px;
-    line-height: 100px; }
+    line-height: 100px;
+    text-align: center; }
     #sponsors .items .item img {
       vertical-align: middle; }
 
