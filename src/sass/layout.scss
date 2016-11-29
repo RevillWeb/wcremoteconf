@@ -234,6 +234,7 @@ ul.nav-list {
       }
       h3 {
         margin-bottom: 0;
+        font-size: 1em;
       }
       .items {
         border-top: solid 2px #E1E1E1;
@@ -262,10 +263,14 @@ ul.nav-list {
         }
       }
       .talk-title {
-        font-size: 20px;
+        font-size: 1.125em;
         color: $blue;
         border-bottom: solid 1px $primary-color;
         padding-bottom: 5px;
+      }
+      .description {
+        font-size: 1em;
+        font-weight: 300;
       }
     }
     .day:first-child {
@@ -416,5 +421,11 @@ rebel-slide-menu .title {
   }
   #clock {
     width: 260px;
+  }
+}
+
+@media (max-width: 320px) {
+  #schedule .container .day .items .item .title .photo img {
+    margin-top: 0;
   }
 }
