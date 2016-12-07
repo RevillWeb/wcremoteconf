@@ -80,8 +80,11 @@ ul.nav-list {
     float: right;
     color: #333;
     font-size: 2em;
-    margin: 15px 15px 0 0;
+    margin: 17px 17px 0 0;
     display: none; }
+    #main-nav .menu-btn img {
+      width: 32px;
+      height: 32px; }
 
 #main-header {
   background-size: 100%;
@@ -214,6 +217,13 @@ ul.nav-list {
               max-width: 5em;
               margin-top: -0.625em;
               display: inline-block; }
+      #schedule .container .day .items .item.break {
+        height: 50px; }
+        #schedule .container .day .items .item.break .title .text {
+          flex-basis: 100%; }
+        #schedule .container .day .items .item.break .title .photo img {
+          width: 64px;
+          height: 64px; }
     #schedule .container .day .talk-title {
       font-size: 1.125em;
       color: #0098e9;

@@ -105,8 +105,12 @@ ul.nav-list {
     float: right;
     color: #333;
     font-size: 2em;
-    margin: 15px 15px 0 0;
+    margin: 17px 17px 0 0;
     display: none;
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 #main-header {
@@ -259,6 +263,20 @@ ul.nav-list {
                 max-width: 5em;
                 margin-top: -0.625em;
                 display: inline-block;
+              }
+            }
+          }
+        }
+        .item.break {
+          height: 50px;
+          .title {
+            .text {
+              flex-basis: 100%;
+            }
+            .photo {
+              img {
+                width: 64px;
+                height: 64px;
               }
             }
           }
