@@ -121,9 +121,9 @@
     "title": "Opening Day 2",
     "duration": 5,
     "break": false,
-    "speaker": "Justin Ribeiro",
-    "handle": "#justinribeiro",
-    "photo": "assets/img/panel/justin.jpg",
+    "speaker": "Erik Isaksen",
+    "handle": "#eisaksen",
+    "photo": "assets/img/panel/erik.jpg",
     "description": "An overview of day 2 and important announcements."
   },
   {
@@ -228,9 +228,9 @@
     "title": "Closing Day 2",
     "duration": 5,
     "break": false,
-    "speaker": "Erik Isaksen",
-    "handle": "#eisaksen",
-    "photo": "assets/img/panel/erik.jpg",
+    "speaker": "Leon Revill",
+    "handle": "#revillweb",
+    "photo": "assets/img/panel/leon.jpg",
     "description": "Summary of the conference and important announcements."
   }
 ]
