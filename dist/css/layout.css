@@ -136,17 +136,17 @@ ul.nav-list {
     #updates .content p {
       margin-bottom: 0.625em; }
     #updates .content .controls input[type="email"] {
-      width: calc(100% - 7.5em);
+      width: calc(100% - 8em);
       box-sizing: border-box;
       border-radius: 0.3em;
       border: none;
-      padding: 0.5em;
+      padding: 0.8em;
       margin-bottom: 0.5em;
       font-size: 1em; }
     #updates .content .controls input[type="submit"] {
-      width: 6.250em;
-      height: 2.5em;
-      border-radius: 0.313em;
+      width: 8em;
+      height: 3.8em;
+      border-radius: 0.3em;
       border: none;
       background-color: #333;
       color: #FFF;
@@ -181,14 +181,27 @@ ul.nav-list {
   font-size: 2.5em;
   color: #e23f24;
   text-align: center;
-  margin-bottom: 1.25em; }
+  margin-bottom: .8em; }
 
 #schedule .container {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #F1F1F1;
-  padding: 0.625em; }
+  padding: 0.625em;
+  min-height: 200px; }
+  #schedule .container .loading-schedule {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+    padding: 20px; }
   #schedule .container .day {
     flex: 1;
     min-width: 17.5em; }
@@ -218,12 +231,16 @@ ul.nav-list {
               margin-top: -0.625em;
               display: inline-block; }
       #schedule .container .day .items .item.break {
-        height: 50px; }
-        #schedule .container .day .items .item.break .title .text {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #schedule .container .day .items .item.break .title {
           flex-basis: 100%; }
-        #schedule .container .day .items .item.break .title .photo img {
-          width: 64px;
-          height: 64px; }
+          #schedule .container .day .items .item.break .title .text {
+            flex-basis: 100%; }
+          #schedule .container .day .items .item.break .title .photo img {
+            width: 64px;
+            height: 64px; }
     #schedule .container .day .talk-title {
       font-size: 1.125em;
       color: #0098e9;
@@ -239,6 +256,9 @@ ul.nav-list {
   clear: both;
   height: 0.125em;
   background-color: #e23f24; }
+
+#schedule.loaded .loading-schedule {
+  display: none; }
 
 #panel {
   background-color: #E1E1E1; }
@@ -353,3 +373,66 @@ rebel-slide-menu .title {
 @media (max-width: 320px) {
   #schedule .container .day .items .item .title .photo img {
     margin-top: 0; } }
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%; }
+
+.loader {
+  color: #e23f24;
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: ''; }
+
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: #F1F1F1;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s; }
+
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #F1F1F1;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease; }
+
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
