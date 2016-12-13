@@ -195,13 +195,13 @@
   },
   {
     "day": 2,
-    "title": "TBA",
+    "title": "Getting the basics right: The challenges and payoffs of building general-purpose web components",
     "duration": 45,
     "break": false,
     "speaker": "Jan Miksovsky",
     "handle": "#janmiksovsky",
     "photo": "assets/img/speakers/jan.jpg",
-    "description": "Talk title to be announced shortly."
+    "description": "In a typical web application, over 50% of the front-end code may reimplement user interface patterns that have already been coded many, many times before. This talk will cover one open source project tackling that challenge."
   },
   {
     "day": 2,
