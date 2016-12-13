@@ -33,7 +33,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap; }
     section .items .item {
-      flex: 1;
+      flex: 1 1 250px;
       padding: 0.625em;
       min-width: 15.62em; }
       section .items .item h3 {
@@ -186,7 +186,6 @@ ul.nav-list {
 #schedule .container {
   position: relative;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   background-color: #F1F1F1;
   padding: 0.625em;
