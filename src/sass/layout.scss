@@ -167,24 +167,27 @@ ul.nav-list {
       margin-bottom: 0.625em;
     }
     .controls {
-      input[type="email"] {
-        width: calc(100% - 8em);
-        box-sizing: border-box;
-        //height: 3.75em;
-        border-radius: 0.3em;
-        border: none;
-        padding: 0.8em;
-        margin-bottom: 0.5em;
-        font-size: 1em;
-      }
-      input[type="submit"] {
-        width: 8em;
-        height: 3.8em;
-        border-radius: 0.3em;
-        border: none;
-        background-color: #333;
-        color: #FFF;
-        cursor: pointer;
+      #mc_embed_signup_scroll {
+        display: flex;
+        input[type="email"] {
+          width: 80%;
+          box-sizing: border-box;
+          height: 40px;
+          border-radius: 0.3em;
+          border: none;
+          padding: 1em;
+          margin-right: 10px;
+          font-size: 1em;
+        }
+        input[type="submit"] {
+          width: 20%;
+          height: 40px;
+          border-radius: 0.3em;
+          border: none;
+          background-color: #333;
+          color: #FFF;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -247,7 +250,7 @@ ul.nav-list {
       padding: 20px;
     }
     .day {
-      flex: 1;
+      flex: 1 1 350px;
       min-width: 17.5em;
       .time {
         margin-bottom: 0.625em;

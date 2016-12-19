@@ -175,16 +175,6 @@
   },
   {
     "day": 2,
-    "title": "Server-Side Web Components",
-    "duration": 45,
-    "break": false,
-    "speaker": "Tim Perry",
-    "handle": "#pimterry",
-    "photo": "assets/img/speakers/pimterry.jpg",
-    "description": "Server Components is a Node.js library that brings server-side rendering to the web component world. In this talk we'll learn why that's useful, see some of the neat tricks this gives you in practice, and find out how this bizarre magic works under the hood."
-  },
-  {
-    "day": 2,
     "title": "Consuming a REST API in the browser? You don't need routing",
     "duration": 5,
     "break": false,
