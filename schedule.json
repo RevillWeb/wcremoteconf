@@ -222,5 +222,10 @@
     "handle": "#revillweb",
     "photo": "assets/img/panel/leon.jpg",
     "description": "Summary of the conference and important announcements."
+  },
+  {
+    "day": 2,
+    "space": true,
+    "duration": 0
   }
 ]

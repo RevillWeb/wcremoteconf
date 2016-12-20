@@ -263,10 +263,11 @@ ul.nav-list {
       }
       .items {
         border-top: solid 0.125em #E1E1E1;
-        padding-top: 0.625em;
+        padding-top: 0.6em;
+        justify-content: space-between;
         .item {
           padding: 0.625em;
-          min-width: 15.625em;
+          min-width: 15em;
           .title {
             display: flex;
             .text {
