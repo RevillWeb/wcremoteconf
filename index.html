@@ -5,32 +5,27 @@
     <title>WEB COMPONENTS REMOTE CONF</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="assets/css/icomoon.css">
     <link rel="stylesheet" href="dist/css/layout.css">
-    <script src="assets/js/skatejs-web-components.js"></script>
+    <script src="assets/js/document-register-element.js"></script>
+    <script src="assets/js/shadydom.min.js"></script>
     <script src="assets/js/countdown-wc.js"></script>
     <script src="assets/js/rebel-slide-menu.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/moment-timezone.min.js"></script>
 </head>
 <body>
-    <rebel-slide-menu id="menu">
-        <span slot="title">Navigation</span>
-        <ul slot="content" class="default">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#speakers">SPEAKERS</a></li>
-            <li><a href="#panel">PANEL</a></li>
-            <li><a href="#sponsors">SPONSORS</a></li>
-        </ul>
-    </rebel-slide-menu>
+    <rebel-slide-menu id="menu"></rebel-slide-menu>
     <div class="container">
         <nav id="main-nav">
             <img src="assets/img/logo-scaled.png" width="100" height="72" />
             <ul class="nav-list">
                 <li><a href="#">HOME</a></li>
+                <li><a href="#schedule">SCHEDULE</a></li>
                 <li><a href="#speakers">SPEAKERS</a></li>
                 <li><a href="#panel">PANEL</a></li>
                 <li><a href="#sponsors">SPONSORS</a></li>
             </ul>
-            <a href="#" class="menu-btn"><span class="icon-hamburger"></span></a>
+            <a href="#" class="menu-btn"><img src="assets/icons/menu.svg" alt="Toggle Menu" /></a>
         </nav>
         <header id="main-header">
             <div class="inner">
@@ -69,17 +64,29 @@
                 </div>
             </div>
         </section>
-        <section id="speakers">
-            <div class="call-to-action" id="cfp">
-                <h2>SUBMIT A PROPOSAL</h2>
-                <p>We are currently accepting proposals for talks on or closely related to web components for Thursday February 16th through to Friday February 17th 2017.</p>
-                <div class="controls">
-                    <a href="https://goo.gl/forms/glcDo6kPnVgFKYyN2" target="_blank" class="button blue">SUBMIT PROPOSAL</a>
+        <section id="schedule">
+            <h2>SCHEDULE</h2>
+            <div class="container">
+                <div class="loading-schedule">
+                    <div class="loader"></div>
+                </div>
+                <div class="day" id="day1">
+                    <h3>THURSDAY 16TH FEB</h3>
+                    <p class="time"><span class="start"></span> - <span class="end"></span></p>
+                    <div class="items"></div>
+                </div>
+                <div class="day" id="day2">
+                    <h3>FRIDAY 17TH FEB</h3>
+                    <p class="time"><span class="start"></span> - <span class="end"></span></p>
+                    <div class="items"></div>
                 </div>
             </div>
+            <!--<div class="bar"></div>-->
+        </section>
+        <section id="speakers">
             <h2>SPEAKERS</h2>
             <div class="items">
-                <div class="item">
+                <div class="item" id="webreflection">
                     <h3>ANDREA GIAMMARCHI</h3>
                     <a href="https://twitter.com/WebReflection" target="_blank" class="social">@WebReflection</a>
                     <div class="photo">
@@ -87,15 +94,15 @@
                     </div>
                     <p class="bio">Web, Mobile, IoT: all JS things since 00's. Formerly JS engineer at @twitter, @facebook, and @nokia - author of JS glossary on demand.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="rob_dodson">
                     <h3>ROB DODSON</h3>
-                    <a href="https://twitter.com/rob_dodson" target="_blank" class="social">@rob_dodson</a>
+                    <a href="https://twitter.com/rob_dodson" class="social">@rob_dodson</a>
                     <div class="photo">
-                        <img src="assets/img/speakers/rob.jpeg" />
+                        <img src="assets/img/speakers/rob.jpeg" width="200" height="200" />
                     </div>
-                    <p class="bio">Rob Dodson is a developer advocate at Google where he focuses on Web Components and Accessibility. Rob s also the host of the popular YouTube shows 'A11yCasts' & 'Polycasts'.</p>
+                    <p class="bio">Raphaël Rougeron is a full-stack developer with 15 years experience in web technologies and the author of <a href="http://bosonic.github.io/" target="_blank">Bosonic</a>.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="treshugart">
                     <h3>TREY SHUGART</h3>
                     <a href="https://twitter.com/treshugart" class="social">@treshugart</a>
                     <div class="photo">
@@ -103,7 +110,7 @@
                     </div>
                     <p class="bio">Musician, beer connoisseur, gamer and ECMAScripter @atlassian. Author of <a href="http://github.com/skatejs/skatejs" target="_blank">SkateJS</a>.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="janmiksovsky">
                     <h3>JAN MIKSOVSKY</h3>
                     <a href="https://twitter.com/janmiksovsky" class="social">@janmiksovsky</a>
                     <div class="photo">
@@ -111,7 +118,7 @@
                     </div>
                     <p class="bio">Jan co-founded Component Kitchen, Inc., which works to promote web components as the building blocks of great web user experiences.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="goldoraf">
                     <h3>RAPHAEL ROUGERON</h3>
                     <a href="https://twitter.com/goldoraf" class="social">@goldoraf</a>
                     <div class="photo">
@@ -119,31 +126,130 @@
                     </div>
                     <p class="bio">Raphaël Rougeron is a full-stack developer with 15 years experience in web technologies and the author of <a href="http://bosonic.github.io/" target="_blank">Bosonic</a>.</p>
                 </div>
+                <div class="item" id="jshcrowthe">
+                    <h3>JOSH CROWTHER</h3>
+                    <a href="https://twitter.com/jshcrowthe" class="social">@jshcrowthe</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/jshcrowthe.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Tech Lead @ FamilySearch. Web Components guy, Conference Presenter, Mormon, Basketball/Ultimate Frisbee player.</p>
+                </div>
+                <div class="item" id="bedeoverend">
+                    <h3>BEDE OVEREND</h3>
+                    <a href="https://twitter.com/bedeoverend" class="social">@bedeoverend</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/bedeoverend.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Lover of JavaScript, Web Components and the extensible web. Co-Founder of <a href="https://twitter.com/simplaio" target="_blank">@simplaio</a>.</p>
+                </div>
+                <div class="item" id="padewitte">
+                    <h3>PIERRE-ALBAN DEWITTE</h3>
+                    <a href="https://twitter.com/padewitte" class="social">@padewitte</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/padewitte.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Building <a href="https://twitter.com/myscript" target="_blank">@myscript</a> cloud from the ground to the roof. Tweeting about cloud, web, mongodb and other stuff...</p>
+                </div>
+                <div class="item" id="chiefcll">
+                    <h3>CHRIS LORENZO</h3>
+                    <a href="https://twitter.com/chiefcll" class="social">@chiefcll</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/chiefcll.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Senior Principal Engineer @ Comcast.</p>
+                </div>
+                <div class="item" id="lastmjs">
+                    <h3>JORDAN LAST</h3>
+                    <a href="https://twitter.com/lastmjs" class="social">@lastmjs</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/lastmjs.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Believer in God, lover of America, Technology Enthusiast, Software Developer, Student, Entrepreneur.</p>
+                </div>
+                <div class="item" id="lostinbrittany">
+                    <h3>HORACIO GONZALEZ</h3>
+                    <a href="https://twitter.com/lostinbrittany" class="social">@lostinbrittany</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/lostinbrittany.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Spaniard lost in Brittany, unconformist coder, dreamer and all-around geek <a href="https://twitter.com/Warp10io" target="_blank">@Warp10io</a> (<a href="https://twitter.com/CityzenData" target="_blank">@CityzenData</a>). #Polymer #gde @Google. Founder <a href="https://twitter.com/FinistJUG" target="_blank">@FinistJUG</a>.</p>
+                </div>
+                <div class="item" id="matthewcp">
+                    <h3>MATTHEW PHILLIPS</h3>
+                    <a href="https://twitter.com/matthewcp" class="social">@matthewcp</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/matthewcp.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Web Components enthusiast.</p>
+                </div>
+                <div class="item" id="kito99">
+                    <h3>KITO D. MANN</h3>
+                    <a href="https://twitter.com/kito99" class="social">@kito99</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/kito99.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Principal Consultant at Virtua, focusing on enterprise architecture, training, development, and mentoring with Java EE, JSF, Web Components, portlets & Liferay.</p>
+                </div>
+                <div class="item" id="dee_bloo">
+                    <h3>DANNY BLUE</h3>
+                    <a href="https://twitter.com/dee_bloo" class="social">@dee_bloo</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/dee_bloo.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Front End Software Engineer <a href="https://twitter.com/livesafe" target="_blank">@livesafe</a>. Google Developer Expert for web technologies. Co-host on <a href="https://twitter.com/TheWebPlatform" target="_blank">@TheWebPlatform</a> podcast. Making computers do things.</p>
+                </div>
+                <div class="item" id="tpluscode">
+                    <h3>TOMASZ PLUSKIEWICZ</h3>
+                    <a href="https://twitter.com/tpluscode" class="social">@tpluscode</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/tpluscode.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">I'm a C# developer with keen interest on The Semantic Web and Web Components.</p>
+                </div>
+                <div class="item" id="thomaswilburn">
+                    <h3>THOMAS WILBURN</h3>
+                    <a href="https://twitter.com/thomaswilburn" class="social">@thomaswilburn</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/thomaswilburn.jpg" width="200" height="200" />
+                    </div>
+                    <p class="bio">Small-batch, artisanal data journalism for <a href="https://twitter.com/seattletimes" target="_blank">@seattletimes</a>. West Coast operations for <a href="https://twitter.com/urbanartistry" target="_blank">@urbanartistry</a>.</p>
+                </div>
+                <div class="item" id="themattshull">
+                    <h3>MATT SHULL</h3>
+                    <a href="https://twitter.com/themattshull" class="social">@themattshull</a>
+                    <div class="photo">
+                        <img src="assets/img/speakers/themattshull.png" width="200" height="200" />
+                    </div>
+                    <p class="bio">Director of <a href="https://twitter.com/aristotlelabs" target="_blank">@aristotlelabs</a> / Internaut Extraordinaire / Web Performance, Physical Web, Beacons, IoT.</p>
+                </div>
             </div>
         </section>
         <section id="panel">
             <h2>PANEL</h2>
             <div class="items">
-                <div class="item">
+                <div class="item" id="eisaksen">
                     <h3>ERIK ISAKSEN</h3>
                     <a href="https://twitter.com/eisaksen" target="_blank" class="social">@eisaksen</a>
                     <div class="photo">
                         <img src="assets/img/panel/erik.jpg" />
                     </div>
+                    <p class="bio">Web Dev, HTML W3C Invited Expert, Google Dev Expert in Web Technologies. <a href="https://twitter.com/readthesource" target="_blank">@readthesource</a> <a href="https://twitter.com/TheWebPlatform" target="_blank">@TheWebPlatform</a>.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="justinribeiro">
                     <h3>JUSTIN RIBEIRO</h3>
                     <a href="https://twitter.com/justinribeiro" target="_blank" class="social">@justinribeiro</a>
                     <div class="photo">
                         <img src="assets/img/panel/justin.jpg" />
                     </div>
+                    <p class="bio">I ♥ the open web & help host <a href="https://twitter.com/TheWebPlatform" target="_blank">@TheWebPlatform</a> podcast. Google Developer Expert. Software engineer + show runner for <a href="https://twitter.com/teamstickman" target="_blank">@teamstickman</a>. ☕ powered, 👪 driven.</p>
                 </div>
-                <div class="item">
+                <div class="item" id="revillweb">
                     <h3>LEON REVILL</h3>
                     <a href="https://twitter.com/revillweb" class="social" target="_blank">@revillweb</a>
                     <div class="photo">
                         <img src="assets/img/panel/leon.jpg" />
                     </div>
+                    <p class="bio">Web architect, <a href="https://blog.revillweb.com/" target="_blank">blogger</a> & author. Working hard to make awesome things for the web platform, mostly with web components.</p>
                 </div>
             </div>
         </section>
@@ -169,5 +275,6 @@
         </section>
     </div>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/schedule.js"></script>
 </body>
 </html>

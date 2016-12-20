@@ -1,0 +1,231 @@
+[
+  {
+    "day": 1,
+    "title": "Opening Day 1",
+    "duration": 5,
+    "break": false,
+    "speaker": "Erik Isaksen",
+    "handle": "#eisaksen",
+    "photo": "assets/img/panel/erik.jpg",
+    "description": "Welcome! An introduction and overview of the following two days and important announcements."
+  },
+  {
+    "day": 1,
+    "title": "Going from Isolate Apps to Sharable Components",
+    "duration": 45,
+    "break": false,
+    "speaker": "Josh Crowther",
+    "handle": "#jshcrowthe",
+    "photo": "assets/img/speakers/jshcrowthe.jpg",
+    "description": "This talk will show how the flexibility of web components, coupled with an open source mindset, can help to eliminate the duplication and improve the experience for your users."
+  },
+  {
+    "day": 1,
+    "title": "Components for Content",
+    "duration": 30,
+    "break": false,
+    "speaker": "Bede Overend",
+    "handle": "#bedeoverend",
+    "photo": "assets/img/speakers/bedeoverend.jpg",
+    "description": "How Web Components are perfect for a new era of Web Content. How and why we built Simpla - a collection of Custom Elements for inline editing and Content Management, the difficulties around interoperability and how Web Components helped us overcome these challenges."
+  },
+  {
+    "day": 1,
+    "title": "Adding Handwriting Recognition to your application with Custom Elements",
+    "duration": 5,
+    "break": false,
+    "speaker": "Pierre-Alban DEWITTE",
+    "handle": "#padewitte",
+    "photo": "assets/img/speakers/padewitte.jpg",
+    "description": "Maybe you have a tablet or event better a tablet with a stylus. Do you know that in 2016 you can just write in a website like on a paper and enjoy nice handwriting recognition? See how it is possible with Custom Elements."
+  },
+  {
+    "day": 1,
+    "title": "Polymer in Practice @ Comcast",
+    "duration": 45,
+    "break": false,
+    "speaker": "Chris Lorenzo",
+    "handle": "#chiefcll",
+    "photo": "assets/img/speakers/chiefcll.jpg",
+    "description": "You’ll see how simple and elegant the Polymer library makes building web components. You’ll get to hear how Comcast is building its next generation single page apps using the latest browser APIs and Polymer’s building block model."
+  },
+  {
+    "day": 1,
+    "title": "BREAK",
+    "duration": 30,
+    "break": true,
+    "photo": "assets/icons/cup.svg"
+  },
+  {
+    "day": 1,
+    "title": "Universal Web Components",
+    "duration": 30,
+    "break": false,
+    "speaker": "Jordan Last",
+    "handle": "#lastmjs",
+    "photo": "assets/img/speakers/lastmjs.jpg",
+    "description": "Applications built from web components can be easy to understand, grow, and refactor, because they are easy to break up into modular and declarative pieces. They work well in the browser, but I believe there is far greater potential if they can begin to spill out of the browser, into the desktop, server, and even embedded applications."
+  },
+  {
+    "day": 1,
+    "title": "A Tale of Creativity, ES2015, and Using Native Components in Production",
+    "duration": 45,
+    "break": false,
+    "speaker": "Matt Shull",
+    "handle": "#themattshull",
+    "photo": "assets/img/speakers/themattshull.png",
+    "description": "A team set out to create a design language for their SaaS products learns what it means to use native Web Components in production. Through battles with ES2015, browser compatibility, and polyfills, to victories of designers using HTML to prototype."
+  },
+  {
+    "day": 1,
+    "title": "But there is no web component for that",
+    "duration": 30,
+    "break": false,
+    "speaker": "Horacio Gonzalez",
+    "handle": "#lostinbrittany",
+    "photo": "assets/img/speakers/lostinbrittany.jpg",
+    "description": "In this talk I will show how easily you can create a web component wrapping a JS library, allowing you to use it like any other element in your application. And in order to show it, I will take two real life examples."
+  },
+  {
+    "day": 1,
+    "title": "Props Down, Events Up; A Guide to Managing State",
+    "duration": 45,
+    "break": false,
+    "speaker": "Matthew Phillips",
+    "handle": "#matthewcp",
+    "photo": "assets/img/speakers/matthewcp.jpg",
+    "description": "State management is currently a big topic in front-end development. Drawing inspiration from the built-in elements we are all already familiar with, we'll discuss the method \"props down, events up\" and how this approach gives you freedom."
+  },
+  {
+    "day": 1,
+    "title": "TBA",
+    "duration": 45,
+    "break": false,
+    "speaker": "Andrea Giammarchi",
+    "handle": "#webreflection",
+    "photo": "assets/img/speakers/andrea.png",
+    "description": "Talk title to be announced shortly."
+  },
+  {
+    "day": 1,
+    "title": "Closing Day 1",
+    "duration": 5,
+    "break": false,
+    "speaker": "Leon Revill",
+    "handle": "#revillweb",
+    "photo": "assets/img/panel/leon.jpg",
+    "description": "A quick summary of the day and important announcements."
+  },
+  {
+    "day": 2,
+    "title": "Opening Day 2",
+    "duration": 5,
+    "break": false,
+    "speaker": "Erik Isaksen",
+    "handle": "#eisaksen",
+    "photo": "assets/img/panel/erik.jpg",
+    "description": "An overview of day 2 and important announcements."
+  },
+  {
+    "day": 2,
+    "title": "TBA",
+    "duration": 45,
+    "break": false,
+    "speaker": "Trey Shugart",
+    "handle": "#treshugart",
+    "photo": "assets/img/speakers/trey.jpg",
+    "description": "Talk title to be announced shortly."
+  },
+  {
+    "day": 2,
+    "title": "Apps with custom elements and RxJS",
+    "duration": 30,
+    "break": false,
+    "speaker": "Danny Blue",
+    "handle": "#dee_bloo",
+    "photo": "assets/img/speakers/dee_bloo.jpg",
+    "description": "In this session learn how to build a simple app using custom elements and RxJS for state management."
+  },
+  {
+    "day": 2,
+    "title": "Beautiful Web Apps with Polymer and TypeScript",
+    "duration": 45,
+    "break": false,
+    "speaker": "Kito D. Mann",
+    "handle": "#kito99",
+    "photo": "assets/img/speakers/kito99.jpg",
+    "description": "In this session you will learn about how to use these technologies together, and how they were used for a real-world IoT project."
+  },
+  {
+    "day": 2,
+    "title": "BREAK",
+    "duration": 30,
+    "break": true,
+    "photo": "assets/icons/cup.svg"
+  },
+  {
+    "day": 2,
+    "title": "TBA",
+    "duration": 45,
+    "break": false,
+    "speaker": "Raphael Rougeron",
+    "handle": "#goldoraf",
+    "photo": "assets/img/speakers/raphael.jpeg",
+    "description": "Talk title to be announced shortly."
+  },
+  {
+    "day": 2,
+    "title": "Consuming a REST API in the browser? You don't need routing",
+    "duration": 5,
+    "break": false,
+    "speaker": "Tomasz Pluskiewicz",
+    "handle": "#tpluscode",
+    "photo": "assets/img/speakers/tpluscode.jpg",
+    "description": "Routing is the default choice for managing state of SPA web applications. However taking advantage of a well-designed REST API can make it completely obsolete thus simplifying you JS code. And there is an element for that."
+  },
+  {
+    "day": 2,
+    "title": "Getting the basics right: The challenges and payoffs of building general-purpose web components",
+    "duration": 45,
+    "break": false,
+    "speaker": "Jan Miksovsky",
+    "handle": "#janmiksovsky",
+    "photo": "assets/img/speakers/jan.jpg",
+    "description": "In a typical web application, over 50% of the front-end code may reimplement user interface patterns that have already been coded many, many times before. This talk will cover one open source project tackling that challenge."
+  },
+  {
+    "day": 2,
+    "title": "Using Custom Elements in Production",
+    "duration": 30,
+    "break": false,
+    "speaker": "Thomas Wilburn",
+    "handle": "#thomaswilburn",
+    "photo": "assets/img/speakers/thomaswilburn.jpg",
+    "description": "For the last two years, The Seattle Times has been using custom elements as a standard part of our toolkit. In this talk, I'll discuss our approach, the elements we use, and the advantages we see of building news apps using declarative markup."
+  },
+  {
+    "day": 2,
+    "title": "TBA",
+    "duration": 45,
+    "break": false,
+    "speaker": "Rob Dodson",
+    "handle": "#rob_dodson",
+    "photo": "assets/img/speakers/rob.jpeg",
+    "description": "Talk title to be announced shortly."
+  },
+  {
+    "day": 2,
+    "title": "Closing Day 2",
+    "duration": 5,
+    "break": false,
+    "speaker": "Leon Revill",
+    "handle": "#revillweb",
+    "photo": "assets/img/panel/leon.jpg",
+    "description": "Summary of the conference and important announcements."
+  },
+  {
+    "day": 2,
+    "space": true,
+    "duration": 0
+  }
+]
