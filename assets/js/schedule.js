@@ -50,5 +50,5 @@ req.onreadystatechange = function() {
         document.querySelector("#schedule").classList.add("loaded");
     }
 };
-req.open("GET", "schedule.json", true);
+req.open("GET", "/assets/json/schedule.json", true);
 req.send();
