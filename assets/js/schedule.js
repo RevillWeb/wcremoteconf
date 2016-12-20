@@ -12,24 +12,32 @@ var $day2Items = document.querySelector("#day2 .items");
 var $day2Start = document.querySelector("#day2 .start");
 $day2Start.innerText = day2.format("LT");
 var $day2End = document.querySelector("#day2 .end");
+var tzString = "";
+try {
+    tzString = new Date().toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+} catch (e) {
+    // If we can't get the TZ string then its not the end of the world ;)
+}
 
-let req = new XMLHttpRequest();
+var req = new XMLHttpRequest();
 req.onreadystatechange = function() {
     if (req.readyState == 4 && req.status == 200) {
         var response = JSON.parse(req.responseText);
         response.forEach(function(talk){
-            var time = (talk.day === 1) ? day1 : day2;
-            var timeLabel = time.format("LT");
             var $item = document.createElement("div");
             $item.classList.add("item");
-            if (talk.break === true) {
-                $item.classList.add("break");
+            if (talk.space !== true) {
+                var time = (talk.day === 1) ? day1 : day2;
+                var timeLabel = time.format("LT");
+                if (talk.break === true) {
+                    $item.classList.add("break");
+                }
+                var $template = '<div class="title"><div class="text"><h3>' + timeLabel + '<span class="tz"> ' + tzString + '</span> (' + talk.duration + ' Min)</h3><div class="talk-title">' + talk.title + '</div></div><a href="' + talk.handle + '" title="' + talk.speaker + '" class="photo"> <img src="' + talk.photo + '" /></a></div>';
+                if (talk.break === false) {
+                    $template += '<p class="description">' + talk.description + '</p>';
+                }
+                $item.innerHTML = $template;
             }
-            var $template = '<div class="title"><div class="text"><h3>' + timeLabel + ' (' + talk.duration + ' Min)</h3><div class="talk-title">' + talk.title + '</div></div><a href="' + talk.handle + '" title="' + talk.speaker + '" class="photo"> <img src="' + talk.photo + '" /></a></div>';
-            if (talk.break === false) {
-                $template += '<p class="description">' + talk.description + '</p>';
-            }
-            $item.innerHTML = $template;
             if (talk.day === 1) {
                 $day1Items.appendChild($item);
                 day1 = moment(day1).add(talk.duration + GAP, 'm');
