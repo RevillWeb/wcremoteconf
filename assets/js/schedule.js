@@ -18,7 +18,6 @@ try {
 } catch (e) {
     // If we can't get the TZ string then its not the end of the world ;)
 }
-
 var req = new XMLHttpRequest();
 req.onreadystatechange = function() {
     if (req.readyState == 4 && req.status == 200) {
