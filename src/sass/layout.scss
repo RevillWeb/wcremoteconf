@@ -159,39 +159,25 @@ ul.nav-list {
   padding: 1.563em;
   h2 {
     color: #FFF;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: .6em;
   }
-  .content {
-    max-width: 37.5em;
+  .btn {
+    padding: 1em 0.5em;
+    border-radius: 0.3em;
+    display: block;
+    background-color: #333;
+    color: #FFF;
     margin: auto;
-    p {
-      margin-bottom: 0.625em;
-    }
-    .controls {
-      #mc_embed_signup_scroll {
-        display: flex;
-        input[type="email"] {
-          width: 80%;
-          box-sizing: border-box;
-          height: 40px;
-          border-radius: 0.3em;
-
-
-          border: none;
-          padding: 1em;
-          margin-right: 10px;
-          font-size: 1em;
-        }
-        input[type="submit"] {
-          width: 20%;
-          height: 40px;
-          border-radius: 0.3em;
-          border: none;
-          background-color: #333;
-          color: #FFF;
-          cursor: pointer;
-        }
-      }
-    }
+    text-align: center;
+    font-size: 1.2em;
+    width: 250px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.2em;
   }
 }
 #clock {
