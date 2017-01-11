@@ -129,31 +129,24 @@ ul.nav-list {
   background-color: #e23f24;
   padding: 1.563em; }
   #updates h2 {
-    color: #FFF; }
-  #updates .content {
-    max-width: 37.5em;
-    margin: auto; }
-    #updates .content p {
-      margin-bottom: 0.625em; }
-    #updates .content .controls #mc_embed_signup_scroll {
-      display: flex; }
-      #updates .content .controls #mc_embed_signup_scroll input[type="email"] {
-        width: 80%;
-        box-sizing: border-box;
-        height: 40px;
-        border-radius: 0.3em;
-        border: none;
-        padding: 1em;
-        margin-right: 10px;
-        font-size: 1em; }
-      #updates .content .controls #mc_embed_signup_scroll input[type="submit"] {
-        width: 20%;
-        height: 40px;
-        border-radius: 0.3em;
-        border: none;
-        background-color: #333;
-        color: #FFF;
-        cursor: pointer; }
+    color: #FFF;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: .6em; }
+  #updates .btn {
+    padding: 1em 0.5em;
+    border-radius: 0.3em;
+    display: block;
+    background-color: #333;
+    color: #FFF;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    width: 250px; }
+  #updates p {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.2em; }
 
 #clock {
   text-align: center;
