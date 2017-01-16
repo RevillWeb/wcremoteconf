@@ -165,13 +165,13 @@
   },
   {
     "day": 2,
-    "title": "TBA",
+    "title": "Why you will probably never author WCs and that's OK",
     "duration": 45,
     "break": false,
-    "speaker": "Raphael Rougeron",
+    "speaker": "Raphaël Rougeron",
     "handle": "#goldoraf",
     "photo": "assets/img/speakers/raphael.jpeg",
-    "description": "Talk title to be announced shortly."
+    "description": "Web Components are frequently perceived as an one-size-fits-all approach to front-end development, while they are in fact quite complementary to solutions like React, Angular or Ember when combined properly. We’ll talk about where they really fit in the front-end stack and what we can do as a community so that web developers will never have to author another dropdown anymore."
   },
   {
     "day": 2,
