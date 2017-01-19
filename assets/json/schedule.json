@@ -4,9 +4,9 @@
     "title": "Opening Day 1",
     "duration": 5,
     "break": false,
-    "speaker": "Erik Isaksen",
-    "handle": "#eisaksen",
-    "photo": "assets/img/panel/erik.jpg",
+    "speaker": "Justin Ribeiro",
+    "handle": "#justinribeiro ",
+    "photo": "assets/img/panel/justin.jpg",
     "description": "Welcome! An introduction and overview of the following two days and important announcements."
   },
   {
@@ -98,13 +98,13 @@
   },
   {
     "day": 1,
-    "title": "TBA",
+    "title": "Unleashing Production Ready Custom Elements",
     "duration": 45,
     "break": false,
     "speaker": "Andrea Giammarchi",
     "handle": "#webreflection",
     "photo": "assets/img/speakers/andrea.png",
-    "description": "Talk title to be announced shortly."
+    "description": "On the 14th of July 2014 I published the first working code for the only Custom Elements polyfill that covered every browser down to IE8. It's 2017 and there are still many untold stories about Custom Elements. In this talk I'll go through what's worked since 2014, the evolution and what's reliable for use today. Live demos and code included."
   },
   {
     "day": 1,
@@ -121,9 +121,9 @@
     "title": "Opening Day 2",
     "duration": 5,
     "break": false,
-    "speaker": "Erik Isaksen",
-    "handle": "#eisaksen",
-    "photo": "assets/img/panel/erik.jpg",
+    "speaker": "Justin Ribeiro",
+    "handle": "#justinribeiro ",
+    "photo": "assets/img/panel/jusin.jpg",
     "description": "An overview of day 2 and important announcements."
   },
   {
