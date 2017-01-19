@@ -123,18 +123,18 @@
     "break": false,
     "speaker": "Justin Ribeiro",
     "handle": "#justinribeiro ",
-    "photo": "assets/img/panel/jusin.jpg",
+    "photo": "assets/img/panel/justin.jpg",
     "description": "An overview of day 2 and important announcements."
   },
   {
     "day": 2,
-    "title": "TBA",
+    "title": "The eternal sunshine of the biased mind",
     "duration": 45,
     "break": false,
     "speaker": "Trey Shugart",
     "handle": "#treshugart",
     "photo": "assets/img/speakers/trey.jpg",
-    "description": "Talk title to be announced shortly."
+    "description": "The talk will cover my exploration as a developer and philosophical differences to the populus. The journey to the deep, and back again. Making the right choice vs the popular choice both in open source and my every day job. The present is a misconception of the future and the future is a misconception of the past."
   },
   {
     "day": 2,
