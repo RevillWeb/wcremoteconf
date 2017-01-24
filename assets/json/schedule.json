@@ -11,16 +11,6 @@
   },
   {
     "day": 1,
-    "title": "Going from Isolate Apps to Sharable Components",
-    "duration": 45,
-    "break": false,
-    "speaker": "Josh Crowther",
-    "handle": "#jshcrowthe",
-    "photo": "assets/img/speakers/jshcrowthe.jpg",
-    "description": "This talk will show how the flexibility of web components, coupled with an open source mindset, can help to eliminate the duplication and improve the experience for your users."
-  },
-  {
-    "day": 1,
     "title": "Components for Content",
     "duration": 30,
     "break": false,
@@ -205,13 +195,13 @@
   },
   {
     "day": 2,
-    "title": "TBA",
+    "title": "German Airports and Accessible Web Components",
     "duration": 45,
     "break": false,
     "speaker": "Rob Dodson",
     "handle": "#rob_dodson",
     "photo": "assets/img/speakers/rob.jpeg",
-    "description": "Talk title to be announced shortly."
+    "description": "What can a boondoggle at a Berlin airport teach us about web development, and how can we head off similar issues in our own code? This talk focuses on the important role Web Components will play in the future of accessibility, and why you should make sure to put accessibility first when you're starting a new project."
   },
   {
     "day": 2,
