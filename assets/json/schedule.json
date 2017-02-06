@@ -31,13 +31,13 @@
   },
   {
     "day": 1,
-    "title": "Polymer in Practice @ Comcast",
+    "title": "Simplifying with Google Polymer",
     "duration": 45,
     "break": false,
     "speaker": "Chris Lorenzo",
     "handle": "#chiefcll",
     "photo": "assets/img/speakers/chiefcll.jpg",
-    "description": "You’ll see how simple and elegant the Polymer library makes building web components. You’ll get to hear how Comcast is building its next generation single page apps using the latest browser APIs and Polymer’s building block model."
+    "description": "Are you looking to build a cutting edge responsive web app? Instead of using heavy frameworks that take time to learn, maintain and replace, #UseThePlatform and leverage new web platform primitives to build a better web!"
   },
   {
     "day": 1,
