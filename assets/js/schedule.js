@@ -4,10 +4,15 @@
 var GAP = 5;
 var day1 = moment("2017-02-16 10-0500");
 var day2 = moment("2017-02-17 10-0500");
+var $day1Date = document.querySelector("#day1 h3");
+$day1Date.innerText = day1.format("dddd Do MMMM");
 var $day1Items = document.querySelector("#day1 .items");
 var $day1Start = document.querySelector("#day1 .start");
 $day1Start.innerText = day1.format("LT");
 var $day1End = document.querySelector("#day1 .end");
+
+var $day2Date = document.querySelector("#day2 h3");
+$day2Date.innerText = day2.format("dddd Do MMMM");
 var $day2Items = document.querySelector("#day2 .items");
 var $day2Start = document.querySelector("#day2 .start");
 $day2Start.innerText = day2.format("LT");
