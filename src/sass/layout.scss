@@ -153,6 +153,17 @@ ul.nav-list {
     bottom: 0;
     background: url('../../assets/img/logo-tran.png') no-repeat center center;
   }
+  .btn {
+    padding: 1em 0.5em;
+    border-radius: 0.3em;
+    display: block;
+    background-color: #333;
+    color: #FFF;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    width: 250px;
+  }
 }
 #updates {
   background-color: $primary-color;
